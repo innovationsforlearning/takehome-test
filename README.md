@@ -21,6 +21,8 @@ any functionality.
 
 ## Your task
 
+### 1. Updating the existing app
+
 Implement the **Needs Work** and **Got It** buttons so that they record the user's response to the flashcard.
 
 When the user clicks either of the buttons, the app should:
@@ -33,6 +35,38 @@ The endpoint to update the server does not exist yet. You should create one that
 
 When refreshing the page or selecting a different level, the app should correctly colour the user's responses in the
 list of word parts.
+
+### 2. Adding new functionality
+
+Add the ability to track study sessions, so users can see their progress over time.
+
+When a user starts studying flashcards for a level, the app should record:
+
+- When they started the session
+- Which flashcards they reviewed
+- Whether they clicked **Got It** or **Needs Work** for each flashcard
+- When they finished the session
+
+You will need to:
+
+1. **Create the necessary database tables** to store study sessions and the flashcards reviewed in each session.
+
+2. **Implement API endpoints** to:
+
+   - Start a new study session for a level
+   - Ensure that flashcard reviews are associated with the correct session
+   - End a study session
+   - Retrieve session details, including:
+     - How long the session lasted
+     - How many flashcards were reviewed
+     - What percentage were marked as Got It
+
+3. Add appropriate validations to ensure data integrity.
+
+4. Write tests for your models and endpoints.
+
+**The React frontend does not need to be updated for this task.** Focus on building a robust API that could support a
+future "Progress" page in the application.
 
 ## Installation
 
