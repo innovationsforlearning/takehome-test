@@ -49,7 +49,7 @@ $ bundle install
 $ bin/setup
 ```
 
-NB: The app's `.ruby-version` is currently set to Ruby 3.4.2. If you don't have this version installed, you can change
+NB: The app's `.ruby-version` is currently set to Ruby 3.4.4. If you don't have this version installed, you can change
 the `.ruby-version` file to a version you have installed.
 
 ### Setting up the React app
