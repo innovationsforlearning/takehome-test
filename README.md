@@ -29,15 +29,20 @@ When the user clicks either of the buttons, the app should:
 * send a request to the server to record the user's response.
 
 The endpoint to update the server does not exist yet. You should create one that records the user's response in the
-`ststus` field of the relevant word part record.
+`status` field of the relevant word part record.
 
 When refreshing the page or selecting a different level, the app should correctly colour the user's responses in the
 list of word parts.
 
 ## Installation
 
-You may download a copy of this repository from the GitHub page, or from [this link](https://github.com/innovationsforlearning/takehome-test/archive/refs/heads/main.zip). 
-You can also fork the repoistory if you wish.
+From the [repository's main page](https://github.com/innovationsforlearning/takehome-test), click the green
+**Use this template** button and create a pristine copy of the repository in your own GitHub account.
+
+Alternatively, you may use [this link](https://github.com/innovationsforlearning/takehome-test/archive/refs/heads/main.zip) 
+to download a ZIP file of the repository.
+
+**Please do not fork the repository.**
 
 You will find the Rails API in the `server` directory and the React front-end in the `client` directory.
 
