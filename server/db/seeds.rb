@@ -19,8 +19,8 @@ level_data = {
 level_data.each do |level, words|
   level = PhonicsLevel.find_or_create_by(level_number: level)
 
-  words.each do |word|
-    word_part = WordPart.find_or_initialize_by(label: word)
-    word_part.update!(phonics_level: level)
+  words.each_with_index do |word, index|
+    word_part = WordPart.find_or_initialize_by(label: word, phonics_level: level)
+    word_part.update!(position: index)
   end
 end
